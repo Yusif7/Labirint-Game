@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.start,
+.exit {
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    background-color: red;
+}
+
+.start {
+    left: 0;
+    bottom: 0;
+}
+
+.exit {
+    top: 0;
+    right: 0;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.bounce {
+    width: 40px;
+    height: 40px;
+    background-color: darkblue;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    border-radius: 50%;
+    transition: all 0.8s ease-in 0s;
+}
+
+.controls {
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    height: 150px;
+    width: 20%;
+}
+
+a {
+    position: absolute;
+}
+
+.up {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.down {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wall {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 150px;
+    position: absolute;
+    top: 0%;
+    left: 30%;
+}
